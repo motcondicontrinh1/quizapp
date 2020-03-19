@@ -1,0 +1,76 @@
+{
+	"name": "g-dark-theme",
+	"displayName": "G Dark-Theme",
+	"description": "Minimalistic Blue Whale vscode theme.",
+	"version": "2.0.2",
+	"publisher": "StoneC0der",
+	"icon": "icon.png",
+	"engines": {
+		"vscode": "^1.30.0"
+	},
+	"categories": [
+		"Themes",
+		"Other"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/stoneC0der/g-dark-theme"
+	},
+	"keywords": [
+		"atom",
+		"dark",
+		"blue Whale",
+		"vscode",
+		"material",
+		"Midnight",
+		"Light",
+		"High Contrast",
+		"bold",
+		"solarize",
+		"black",
+		"night"
+	],
+	"galleryBanner": {
+		"color": "#003248",
+		"theme": "dark"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "G Dark (Default)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/G-dark.theme-color-theme.json"
+			},
+			{
+				"label": "G Dark (OL)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/G-dark-one-love.theme-color-theme.json"
+			},
+			{
+				"label": "G Light",
+				"uiTheme": "vs",
+				"path": "./themes/G-dark-light.theme-color-theme.json"
+			},
+			{
+				"label": "G Light (Silver)",
+				"uiTheme": "vs",
+				"path": "./themes/G-dark-silver.theme-color-theme.json"
+			},
+			{
+				"label": "G Dark (Deep Dark Green)",
+				"uiTheme": "hc-black",
+				"path": "./themes/G-dark-deep-darkgreen.theme-color-theme.json"
+			},
+			{
+				"label": "G Dark Blue",
+				"uiTheme": "hc-black",
+				"path": "./themes/G-dark-blue.theme-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "fb46a449-da21-4390-bffb-2641caa8969a",
+		"publisherId": "187efd80-7e14-4873-a62b-129be3a9858f",
+		"publisherDisplayName": "stonecoder"
+	}
+}

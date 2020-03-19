@@ -1,0 +1,61 @@
+{
+	"name": "ctrl-semicolon",
+	"displayName": "Ctrl-Semicolon",
+	"description": "Semicolon insertion extension",
+	"version": "0.1.0",
+	"publisher": "Gforcedev",
+	"engines": {
+		"vscode": "^1.19.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.insertSemiColon"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.insertSemiColon",
+				"title": "Insert Semicolon at end of current line"
+			},
+			{
+				"command": "extension.removeSemiColon",
+				"title": "Remove Semicolon at end of current line"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "extension.insertSemiColon",
+				"key": "ctrl+;",
+				"mac": "cmd+;",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "extension.removeSemiColon",
+				"key": "ctrl+shift+;",
+				"mac": "cmd+shift+;",
+				"when": "editorTextFocus"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.6",
+		"@types/node": "^7.0.43",
+		"@types/mocha": "^2.2.42"
+	},
+	"__metadata": {
+		"id": "b833050e-a960-4454-a1b6-f9b1d7e71eeb",
+		"publisherId": "145b0fff-6bab-4027-a8ea-238308619604",
+		"publisherDisplayName": "Gforcedev"
+	}
+}
